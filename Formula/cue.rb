@@ -5,6 +5,12 @@ class Cue < Formula
   sha256 "71d119ec086672416f1eec9828c519c96fb6655ff140d87cccbc1c50b2e93ae8"
   license "MIT"
 
+  bottle do
+    root_url "https://raw.githubusercontent.com/kael-wq/homebrew-tap/main/bottles"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "977c90fa4a4b4675e9f30209467adcbe3d28562d7e37e78e9abfb22ddc966dbe"
+  end
+
   depends_on :macos
 
   def install
